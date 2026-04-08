@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Station App -- SkillsUSA State</title>
+
+        <!-- "defer" because this js accesses DOM objects -->
+        <script src="./src/index.js" defer></script>
+
+        <link rel="stylesheet" href="./index.css">
+        
+    </head>
+    <body>
+        <h1 class="title">Weather Application</h1>
+
+        <!-- Container to show the user relavent errors when needed -->
+        <div id="error-box"></div>
+
+        <div id="zip-code-section" class="section">
+            <input type="text" id="zip" placeholder="ZIP Code... e.g. 53228" />
+            <button id="submit-zip">Get Weather</button>
+        </div>
+
+        <div id="results-section" class="section">
+            <div style="display: flex;">
+                <h1>Current weather in&nbsp;</h1>
+                <h1 id="relative-location"></h1>
+            </div>
+            <div id="current-weather">
+                <!-- icon -->
+                
+                <h1 id="current-temp">65</h1>
+
+            </div>
+            <h4 style="text-align: center;">Weekly Forecast</h4>
+            <div id="weekly-forecast"></div>
+        </div>
+    </body>
+</html>

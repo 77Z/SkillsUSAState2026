@@ -1,0 +1,84 @@
+body {
+    background: #000;
+    color: #fff !important;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#results-section {
+    display: none;
+}
+
+#zip-code-section {
+    display: flex;
+    gap: 20px;
+}
+
+#zip-code-section input,button {
+    flex-grow: 1;
+    background: #222;
+    color: #fff;
+    border: none;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#zip-code-section button {
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-weight: 900;
+}
+
+#current-weather {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#current-weather img {
+    border-radius: 1000px;
+}
+
+.section {
+    max-width: 860px;
+    background: #111;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#weekly-forecast {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.day {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.day img {
+    width: 100px;
+}
+
+.day-temp {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.grow {
+    flex-grow: 1;
+}
